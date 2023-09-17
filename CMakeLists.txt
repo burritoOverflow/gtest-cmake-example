@@ -4,7 +4,12 @@ project(GTestExample LANGUAGES CXX)
 
 option(BUILD_SHARED_LIBS "Build shared libraries instead of static libraries" OFF)
 
-set(CMAKE_CXX_STANDARD 17)
+if (BUILD_SHARED_LIBS)
+    set(LIBTYPE SHARED)
+else()
+    set(LIBTYPE STATIC)
+endif()
+
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 

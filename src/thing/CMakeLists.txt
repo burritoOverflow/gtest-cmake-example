@@ -1,8 +1,4 @@
-if (BUILD_SHARED_LIBS)
-    add_library(Thing SHARED "")
-else()
-    add_library(Thing STATIC "")
-endif()
+add_library(Thing ${LIBTYPE} "")
 
 target_sources(Thing
     PRIVATE
