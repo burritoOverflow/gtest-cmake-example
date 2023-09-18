@@ -1,4 +1,4 @@
-add_library(Thing ${LIBTYPE} "")
+add_library(Thing)
 
 target_sources(Thing
     PRIVATE
