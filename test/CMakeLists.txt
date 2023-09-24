@@ -7,7 +7,6 @@ FetchContent_Declare(
   GIT_TAG v1.14.0
 )
 
-
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
